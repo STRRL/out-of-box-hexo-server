@@ -1,6 +1,7 @@
 FROM nginx:latest
-RUN apt-get update && apt-get install -y openssh-server && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y openssl openssh-server && rm -rf /var/lib/apt/lists/*
 COPY ./entrypoint.sh /entrypoint.sh
+COPY ./conf /conf
 EXPOSE 80
 EXPOSE 22
 ENTRYPOINT [ "/entrypoint.sh" ]
