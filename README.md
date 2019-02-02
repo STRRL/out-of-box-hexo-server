@@ -7,7 +7,7 @@ Docker environment, so it is clean, secure and easy to use.
 
 ## TODO list
 
-- [ ] Nginx docker image with openssh.
-- [ ] Automatic generate ssh private key.
+- [x] Nginx docker image with openssh.
+- [x] Automatic generate ssh private key.
 - [ ] Test with `hexo-deloyer-sftp`.
 - [ ] Add some arguments such as private key passphrase.
